@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/26504e4a1f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li class="brand"><img src="logo.png" alt="Spotify"> Spotify</li>
+            <li><i class="fas fa-home"></i> Home</li>
+            <li><i class="fas fa-search"></i> Browse</li>
+            <li><i class="fas fa-music"></i> Library</li>
+            <li><i class="fas fa-star"></i> Premium</li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="songList">
+            <h1>Best of NCS - No Copyright Sounds</h1>
+            <div class="songItemContainer"></div>
+        </div>
+    </div>
+
+    <!-- Bottom Music Player -->
+    <div class="bottom">
+        <input type="range" id="progressBar" min="0" value="0" max="100">
+        <div class="icons">
+            <i class="fas fa-random" id="shuffle"></i>
+            <i class="fas fa-step-backward" id="prev"></i>
+            <i class="far fa-play-circle" id="playPause"></i>
+            <i class="fas fa-step-forward" id="next"></i>
+            <i class="fas fa-redo" id="repeat"></i>
+        </div>
+        <div class="songInfo">
+            <img src="playing.gif" width="42px" id="gif">
+            <span id="currentSongName">Select a Song</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
